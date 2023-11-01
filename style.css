@@ -19,15 +19,18 @@ body{
 
 .container{
     width: 500px;
-    height: 400px;
+    height: 310px;
     position: absolute;
     flex-direction: column; /* Empilha as divs verticalmente */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    border: 3px solid black;
+    border: 3px solid #32323829;
     border-radius: 1%;
+
+    -webkit-box-shadow: 5px 5px 5px 0px #0000006f, -50px -50px 0px -30px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #0000003e, -50px -50px 0px -30px rgba(0,0,0,0);
 }
 
 /* MENU STEPS */
@@ -35,18 +38,18 @@ body{
 .stpes{
     height: 50px;
     display: flex;
-    justify-content: space-between; /* Espaço entre os itens */
+    justify-content: space-around; /* Espaço entre os itens */
 }
 
 .left {
     display: flex;
     margin-top: 15px;
     margin-left: 15px;
+    
 }
 
 .center {
     display: flex;
-    margin: 0 auto;
     margin-top: 15px;
 }
 
@@ -56,14 +59,16 @@ body{
     margin-right: 15px;
 }
 
-span{
-    margin-left: 50px;
-}
+
 
 a{
     width: 20px;
     height: 20px;
 
+    display: flex;
+    justify-content: center;
+
+    
    text-decoration: none;
    border-radius: 50%;
 
@@ -86,8 +91,8 @@ a{
 
 /* INPUTS */
 
-.inputs{
-    height: 300px;
+.inputs {
+
     display: flex;
 }
 
@@ -96,13 +101,20 @@ a{
     margin-left: 20px;
 }
 
-textarea{
+
+input{
     width: 450px;
+    height: 30px;
+    margin-bottom: 10px;
+
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #633BBC;
 }
 
-
-
-
+input:hover{
+    border-bottom: 2px solid #633BBC;  
+}
 
 /* BOTÕES */
 
@@ -118,7 +130,7 @@ textarea{
     height: 35px;
 
     margin-left: 15px;
-    margin-top: 7px;
+    margin-top: 30px;
 
     border: 2px solid #633BBC;
     border-radius: 5px;
