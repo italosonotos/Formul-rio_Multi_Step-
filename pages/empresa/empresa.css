@@ -1,0 +1,31 @@
+:root{
+    --Roxo_claro: #633BBC;
+    --Cinza_Medio: #323238;
+    --Cinza_Claro: #E1E1E6;
+}
+
+#one{
+    background-color: #323238;
+    color: #E1E1E6;
+}
+
+#two{
+    background-color: #633BBC;
+    color: white;
+}   
+
+a{
+    background-color: #323238;
+    color: #E1E1E6;
+}
+
+textarea{
+    margin-top: 10px;
+
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #633BBC;
+}
+textarea:hover{
+    border-bottom: 2px solid #633BBC;  
+}
