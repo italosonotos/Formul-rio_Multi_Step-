@@ -116,7 +116,9 @@ input[type=number] {
 
 }
 
-#continuar , #enviaProposta{
+#botaoEmpresa , 
+#enviaProposta,
+#botaoIndex{
     width: 150px;
     height: 35px;
 
@@ -142,15 +144,13 @@ input[type=number] {
     color: #633BBC;
 }
 
-#continuar:hover,
-#enviaProposta:hover{
+#botaoEmpresa:hover,
+#enviaProposta:hover,
+#botaoIndex:hover{
     background-color: white;
     color: #633BBC;
 }
 
-#continuar{
-    margin-left: 320px;
-}
 
 #voltar:hover{
     background-color: #633BBC;

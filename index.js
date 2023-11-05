@@ -1,15 +1,22 @@
-function proximaPagina(){
-    const localizacao = window.location.href ="index.html";
+const botaoIndex = document.getElementById("botaoIndex");
+const botaoEmpresa = document.getElementById("botaoEmpresa");
+const enviaProposta = document.getElementById("enviaProposta");
 
-    if (localizacao == "index.html"){
-        localizacao = window.location.href = "pages/empresa/empresa.html";
-    } 
-}
+const botaoVoltar = document.getElementById("voltar")
 
-function voltarPagina(){
-    const localizacao = window.location.href = "pages/empresa/empresa.html"
-    
-    if (localizacao == "pages/empresa/empresa.html"){
-        localizacao = window.location.href = "index.html";
+let paginaAtual = 1
+
+botaoIndex.addEventListener("click",function() {
+    if (paginaAtual === 1){
+        window.location.href = "pages/empresa/empresa.html";
+        paginaAtual = 2
     }
-}
+});
+
+botaoEmpresa.addEventListener("click", function() {
+    if (paginaAtual === 2) {
+        // Redirecione para a próxima página
+        window.location.href = "pages/contato/contato.html";
+        paginaAtual = 3;
+    }
+});
